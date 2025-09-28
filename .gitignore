@@ -1,0 +1,33 @@
+@'
+# Java / Maven
+/target/
+/build/
+*.class
+
+# IDEs
+/.idea/
+/*.iml
+/.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+tmp/
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Spring Boot config (avoid pushing credentials)
+/application-*.yml
+/application-*.properties
+.env
+
+# Others
+/.gradle/
+.gradle
+'@ > .gitignore
