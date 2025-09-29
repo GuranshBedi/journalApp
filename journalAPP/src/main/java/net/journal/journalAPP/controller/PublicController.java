@@ -1,5 +1,6 @@
 package net.journal.journalAPP.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import net.journal.journalAPP.entity.User;
 import net.journal.journalAPP.service.UserDetailsServiceImpl;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/public")
+@Tag(name="Public APIs")
 @Slf4j
 public class PublicController {
 

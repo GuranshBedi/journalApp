@@ -1,5 +1,6 @@
 package net.journal.journalAPP.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import net.journal.journalAPP.cache.AppCache;
 import net.journal.journalAPP.entity.User;
 import net.journal.journalAPP.service.UserService;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@Tag(name="Admin APIs")
 @RequestMapping("/admin")
 public class AdminController {
 

@@ -1,5 +1,6 @@
 package net.journal.journalAPP.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import net.journal.journalAPP.entity.JournalEntry;
 import net.journal.journalAPP.entity.User;
 import net.journal.journalAPP.service.JournalEntryService;
@@ -17,6 +18,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
+@Tag(name="Journal APIs")
 @RequestMapping("/journal")
 public class JournalEntryController {
 

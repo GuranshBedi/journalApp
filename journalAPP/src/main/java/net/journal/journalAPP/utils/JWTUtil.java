@@ -51,7 +51,7 @@ public class JWTUtil {
                 .header().empty().add("typ","JWT")
                 .and()
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60))
+                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60)) // 5 minutes expiration time
                 .signWith(getSigningKey())
                 .compact();
     }
@@ -59,6 +59,4 @@ public class JWTUtil {
     public Boolean validateToken(String token) {
         return !isTokenExpired(token);
     }
-
-
 }
